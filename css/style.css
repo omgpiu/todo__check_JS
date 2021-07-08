@@ -1,0 +1,91 @@
+
+.through__line {
+    text-decoration: line-through;
+}
+
+.todo__container {
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.elements__li {
+    margin-top: 10px;
+    height: 25px;
+    border-radius: 5px;
+    padding-top: 2px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid grey;
+}
+
+.close {
+    position: relative;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border: 1px solid #e62f57;
+    border-radius: 50%;
+}
+
+.close:before,
+.close:after {
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 1px;
+    width: 18px;
+    height: 1px;
+    background: #e62f57;
+}
+
+.close:before {
+    webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.close:after {
+    webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.elements__li:nth-child(odd) {
+    background-color: #67ceb8;
+
+}
+.elements__li:nth-child(even) {
+    background-color: lightpink;
+
+}
+
+button {
+    border-radius: 10px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    height: 25px;
+    background: lightgrey;
+}
+
+button:active, button:focus {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    border: 0;
+}
+
+input {
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+ul {
+ padding: 0;
+}
